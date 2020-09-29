@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 3rem;
+  color: #fff;
+  background-color: #fff;
+  background-color: #000;
+}
+
+.grid-container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  color: #fff;
+  grid-template-columns: 25rem 1fr 1fr;
+  grid-template-rows: 5rem 1fr;
+  gap: 0.1rem;
+}
+
+.item {
+  background-color: #131212;
+}

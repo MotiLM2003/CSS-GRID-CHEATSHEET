@@ -33,8 +33,9 @@ body {
     'header header header'
     'nav main ads'
     'footer footer footer';
-  grid-template-rows: 20rem 1fr 30rem;
-  /* grid-template-columns: 20rem 1fr 20rem; */
+  grid-template-rows: 10% 1fr 10%;
+  grid-template-columns: 22% 1fr 22%;
+  min-width: 30rem;
 }
 
 .item {
