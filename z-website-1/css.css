@@ -51,6 +51,7 @@ body {
   padding: 1rem;
 }
 .humburger {
+  display: none;
   position: relative;
   border-top: 3px solid rgb(49, 49, 49);
   width: 2.5rem;
@@ -75,7 +76,52 @@ body {
   width: 2.5rem;
 }
 
-/*****  GLOVAL ****/
+.ui-menu {
+  display: flex;
+  flex-basis: 63%;
+}
+.ui-menu li {
+  list-style-type: none;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  display: block;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.ui-menu li::before {
+  background-color: #fff;
+  transition: all 1s ease-out;
+}
+
+.ui-menu li:hover::before {
+  content: '';
+  display: block;
+  position: absolute;
+  background: var(--yellow-1);
+  height: 3px;
+  left: 50%;
+  bottom: 1px;
+
+  transform: translateX(-50%);
+  width: 40%;
+  transition: all 1s ease-out;
+}
+
+@media screen and (max-width: 660px) {
+  .ui-menu {
+    flex-basis: 0;
+
+    display: none;
+  }
+
+  .humburger {
+    display: block;
+  }
+}
+
+/*****  GLOBAL ****/
 input[type='text'],
 input[type='search'] {
   padding: 0.81rem;
@@ -147,9 +193,16 @@ input[type='search'] {
 }
 
 .home-repair-text .btn {
-  margin-top: 6.5rem;
+  margin-top: 3.5rem;
   display: block;
 }
+
+@media screen and (max-width: 1012px) {
+  .home-repair-text .btn {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+}
+
 .home-repair-image {
   position: relative;
 }
