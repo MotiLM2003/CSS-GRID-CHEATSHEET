@@ -10,6 +10,8 @@
 }
 :root {
   --light-gray-1: #d9d9d9;
+
+  --yellow-1: #f1c50e;
 }
 html {
   /* set font-size to 10px */
@@ -72,7 +74,8 @@ body {
   left: 0;
   width: 2.5rem;
 }
-/*****  global ****/
+
+/*****  GLOVAL ****/
 input[type='text'],
 input[type='search'] {
   padding: 0.81rem;
@@ -86,7 +89,23 @@ input[type='search'] {
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
 }
 
-/****  Main Content  ****/
+.btn {
+  padding: 1.5rem;
+  border: 1px solid rgb(53, 53, 53);
+  background-color: transparent;
+  width: 15rem;
+  outline: none;
+  transition: background-color 0.5s ease-out;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: whitesmoke;
+}
+
+/**** END GLOBAL ****/
+
+/****  MAIN CONTENT  ****/
 .main-content {
   border-top: 1px solid var(--light-gray-1);
   padding-top: 3rem;
@@ -100,23 +119,36 @@ input[type='search'] {
 .home-repair-container .f-item {
   flex-grow: 1;
   flex-basis: 50%;
-  min-width: 500px;
+  min-width: 50rem; /* cause a problem with the header under 500px;
 }
 
 .home-repair-text {
   /* background-color: red; */
 }
 .home-repair-text h1 {
-  color: #f1c50e;
+  color: var(--yellow-1);
   font-family: Oswald;
   font-size: 8.6rem;
   font-weight: 700;
+  height: 10rem;
 }
 .home-repair-text h2 {
   color: #b3b3b3;
   font-family: Oswald;
   font-size: 6.75rem;
   font-weight: 400;
+}
+
+.home-repair-text p {
+  margin-top: 1.7rem;
+  line-height: 2.6rem;
+  width: 80%;
+  max-width: 49rem;
+}
+
+.home-repair-text .btn {
+  margin-top: 6.5rem;
+  display: block;
 }
 .home-repair-image {
   position: relative;
