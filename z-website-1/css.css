@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+:root {
+  --light-gray-1: #d9d9d9;
+}
+html {
+  /* set font-size to 10px */
+  font-size: 62.5%;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  font-size: 1.6rem;
+  font-family: Raleway, sans-serif;
+}
+.wrapper {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 0.7rem;
+}
+
+.header {
+  display: flex;
+  height: 7rem;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: khaki; */
+}
+
+.fa-search {
+  font-size: 1.3rem;
+  color: #d9d9d9;
+}
+
+.search-container {
+  border: 1px solid var(--light-gray-1);
+  background-color: #fff;
+}
+
+.search-container a {
+  display: inline-block;
+  padding: 1rem;
+}
+.humburger {
+  position: relative;
+  border-top: 3px solid rgb(49, 49, 49);
+  width: 2.5rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.humburger::before {
+  content: '';
+  position: absolute;
+  border-top: inherit;
+  top: 4px;
+  left: 0;
+  width: 2.5rem;
+}
+.humburger::after {
+  content: '';
+  position: absolute;
+  border-top: inherit;
+  top: 11px;
+  left: 0;
+  width: 2.5rem;
+}
+/*****  global ****/
+input[type='text'],
+input[type='search'] {
+  padding: 0.81rem;
+  border: none;
+  font-size: 1.6rem;
+  font-family: 'Raleway', sans-serif;
+  outline: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/****  Main Content  ****/
+.main-content {
+  border-top: 1px solid var(--light-gray-1);
+  padding-top: 3rem;
+}
+
+.home-repair-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-repair-container .f-item {
+  flex-grow: 1;
+  flex-basis: 50%;
+  min-width: 500px;
+}
+
+.home-repair-text {
+  /* background-color: red; */
+}
+.home-repair-text h1 {
+  color: #f1c50e;
+  font-family: Oswald;
+  font-size: 8.6rem;
+  font-weight: 700;
+}
+.home-repair-text h2 {
+  color: #b3b3b3;
+  font-family: Oswald;
+  font-size: 6.75rem;
+  font-weight: 400;
+}
+.home-repair-image {
+  position: relative;
+}
+
+.home-repair-image .img-1 {
+  width: 100%;
+  object-position: 96% 100%;
+  background-position: 92% 100%;
+}
+
+.home-repair-image .img-2 {
+  width: 70%;
+  position: absolute;
+  bottom: -12.7rem;
+  left: 50%;
+  transform: translateX(-30%);
+  object-fit: cover;
+}

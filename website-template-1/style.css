@@ -23,8 +23,16 @@ body {
   grid-template-columns: 25rem 1fr 1fr;
   grid-template-rows: 5rem 1fr;
   gap: 0.1rem;
+  font-size: 2rem;
 }
 
 .item {
   background-color: #131212;
+}
+
+.item-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
 }

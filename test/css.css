@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* set font-size to 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #fff;
+  /* justify-content: space-around;
+  align-items: center;
+  height: 100vh; */
+  flex-wrap: wrap; /* will make the item drop to the next line if it reach its min-width/width (has no space) */
+  /* flex-wrap: wrap-reverse; /* the same is wrap but the row  will move to the top */
+}
+
+.box {
+  height: 100px;
+  /* width: 200px; */
+  /* flex-grow: 1; */
+  /* min-width: 500px; */
+  /* flex-basis: 500px; */
+  flex: 1 0 200px;
+  /* flex: flex-grow | flex-shrink | flex-basis; comman way to use it: 
+  flex: 1 - which set the grow to 1 the shrink to 1 and the basis to zero */
+}
+
+.one {
+  background-color: red;
+  /* flex-grow: 2; */
+  /* flex-shrink: 1; */
+  /* flex-basis: 100px; */
+}
+
+.two {
+  background-color: blue;
+  /* flex-grow: 3; */
+  /* flex-shrink: 2; */
+  /* flex-basis: 200px; */
+}
+
+.three {
+  background-color: green;
+  /* flex-grow: 1; */
+  /* flex-shrink: 4; */
+  /* flex-basis: 300px; */
+}
