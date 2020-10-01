@@ -80,6 +80,7 @@ body {
   display: flex;
   flex-basis: 63%;
 }
+
 .ui-menu li {
   list-style-type: none;
   flex-grow: 1;
@@ -167,7 +168,7 @@ input[type='search'] {
 .home-repair-container .f-item {
   flex-grow: 1;
   flex-basis: 50%;
-  min-width: 50rem; /* cause a problem with the header under 500px;
+  /* min-width: 30rem; /* cause a problem with the header under 500px; */
 }
 
 .home-repair-text {
@@ -200,8 +201,31 @@ input[type='search'] {
 }
 
 @media screen and (max-width: 1012px) {
+  .home-repair-text h1 {
+    font-size: 7.2rem;
+  }
   .home-repair-text .btn {
     margin: 1.5rem 0 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .home-repair-text h1 {
+    font-size: 4.5rem;
+    height: 5rem;
+  }
+  .home-repair-text h2 {
+    font-size: 3.5rem;
+  }
+  .home-repair-text .btn {
+    margin: 1.5rem 0 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .home-repair-text h1 {
+    font-size: 6.2rem;
+    height: 10rem;
   }
 }
 
@@ -210,7 +234,8 @@ input[type='search'] {
 }
 
 .home-repair-image .img-1 {
-  width: 100%;
+  width: 582px;
+  height: 554px;
   object-position: 96% 100%;
   background-position: 92% 100%;
 }
@@ -222,4 +247,25 @@ input[type='search'] {
   left: 50%;
   transform: translateX(-30%);
   object-fit: cover;
+}
+
+@media screen and (max-width: 1100px) {
+  .home-repair-image .img-1 {
+    width: 420px;
+    height: 471px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home-repair-image .img-1 {
+    width: 320px;
+    height: 371px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .home-repair-image .img-1 {
+    width: 582px;
+    height: 554px;
+  }
 }
