@@ -88,6 +88,8 @@ body {
   display: block;
   padding: 1rem;
   cursor: pointer;
+
+  margin: 0 0.5rem;
 }
 
 .ui-menu li::before {
@@ -99,13 +101,15 @@ body {
   height: 3px;
   left: 50%;
   bottom: 1px;
-  width: 40%;
+  width: 0%;
   transition: all 0.3s ease-out;
 }
 
 .ui-menu li:hover::before {
   background: var(--yellow-1);
   display: table;
+  width: 40%;
+  border-radius: 2rem;
 }
 
 @media screen and (max-width: 660px) {
