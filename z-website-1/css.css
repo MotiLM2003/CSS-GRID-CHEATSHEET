@@ -158,6 +158,7 @@ input[type='search'] {
 .main-content {
   border-top: 1px solid var(--gray-light-1);
   padding-top: 3rem;
+  margin-bottom: 15rem;
 }
 
 .home-repair-container {
@@ -238,17 +239,8 @@ input[type='search'] {
   height: 554px;
   object-position: 96% 100%;
   background-position: 92% 100%;
+  border-radius: 10rem;
 }
-
-.home-repair-image .img-2 {
-  width: 70%;
-  position: absolute;
-  bottom: -12.7rem;
-  left: 50%;
-  transform: translateX(-30%);
-  object-fit: cover;
-}
-
 @media screen and (max-width: 1100px) {
   .home-repair-image .img-1 {
     width: 420px;
@@ -267,5 +259,28 @@ input[type='search'] {
   .home-repair-image .img-1 {
     width: 582px;
     height: 554px;
+  }
+}
+
+/*  CAROUSEL CONTENT */
+.carousel_content {
+  background-color: var(--yellow-1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0 1rem 10rem 1rem;
+}
+
+.carousel-item {
+  background-color: #fff;
+  width: 28rem;
+  height: 30rem;
+}
+
+@media screen and (max-width: 1199px) {
+  .carousel-item {
+    width: 40rem;
   }
 }
