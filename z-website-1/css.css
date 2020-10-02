@@ -169,7 +169,7 @@ input[type='search'] {
 .home-repair-container .f-item {
   flex-grow: 1;
   flex-basis: 50%;
-  /* min-width: 30rem; /* cause a problem with the header under 500px; */
+  min-width: 40rem; /* cause a problem with the header under 500px;
 }
 
 .home-repair-text {
@@ -210,16 +210,31 @@ input[type='search'] {
   }
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 814px) {
+  .main-content {
+    margin-bottom: 9rem;
+  }
   .home-repair-text h1 {
     font-size: 4.5rem;
     height: 5rem;
+    text-align: center;
   }
   .home-repair-text h2 {
     font-size: 3.5rem;
+    text-align: center;
   }
+  .home-repair-text p {
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .home-repair-image .img-1 {
+    width: 10%;
+  }
+
   .home-repair-text .btn {
-    margin: 1.5rem 0 1.5rem 0;
+    margin: 2.5rem auto 4.5rem auto;
   }
 }
 
@@ -235,31 +250,12 @@ input[type='search'] {
 }
 
 .home-repair-image .img-1 {
-  width: 582px;
-  height: 554px;
+  width: 100%;
   object-position: 96% 100%;
   background-position: 92% 100%;
   border-radius: 10rem;
-}
-@media screen and (max-width: 1100px) {
-  .home-repair-image .img-1 {
-    width: 420px;
-    height: 471px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .home-repair-image .img-1 {
-    width: 320px;
-    height: 371px;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  .home-repair-image .img-1 {
-    width: 582px;
-    height: 554px;
-  }
+  box-shadow: 1rem -1rem rgba(241, 197, 17, 0.6),
+    2rem -2rem rgba(221, 186, 48, 0.6);
 }
 
 /*  CAROUSEL CONTENT */
