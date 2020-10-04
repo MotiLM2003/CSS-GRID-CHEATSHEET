@@ -247,6 +247,7 @@ input[type='search'] {
 
 .home-repair-image {
   position: relative;
+  margin-top: 3.5rem;
 }
 
 .home-repair-image .img-1 {
@@ -273,10 +274,36 @@ input[type='search'] {
   background-color: #fff;
   width: 28rem;
   height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
 }
 
 @media screen and (max-width: 1199px) {
   .carousel-item {
     width: 40rem;
   }
+}
+
+.carousel_content .icon-content {
+  background-color: var(--yellow-1);
+  width: 7.5rem;
+  padding: 1.5rem;
+  border-radius: 50%;
+}
+.carousel_content .icon {
+  width: 5.5rem;
+}
+
+.carousel-item .header {
+  color: var(--yellow-1);
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+.carousel-item .context {
+  text-align: center;
+
+  line-height: 3rem;
 }
