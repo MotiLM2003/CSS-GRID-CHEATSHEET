@@ -144,7 +144,7 @@ input[type='search'] {
   background-color: transparent;
   width: 15rem;
   outline: none;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.3s ease-out;
   cursor: pointer;
 }
 
@@ -167,7 +167,7 @@ input[type='search'] {
   border-top: 1px solid var(--gray-light-1);
   padding-top: 3rem;
   margin-bottom: 15rem;
-  height: 55vh;
+  min-height: 55vh;
 }
 
 .home-repair-container {
@@ -321,7 +321,7 @@ input[type='search'] {
 #about-us {
   background-color: #e5e5e5;
   columns: #111111;
-  height: 35vh;
+  min-height: 45vh;
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -340,4 +340,36 @@ input[type='search'] {
   line-height: 3.5rem;
   text-align: center;
   margin-bottom: 5rem;
+}
+
+/**** HOW CAN WE HELP YOU ****/
+
+#help {
+  background-image: url('./img/img-1.jpg');
+  background-size: cover;
+}
+
+#help .wrapper {
+  min-height: 45vh;
+  display: flex;
+}
+#help .help-info {
+  background-color: var(--yellow-1);
+  height: 42rem;
+  width: 40rem;
+
+  /* min-width: 35rem; */
+  /* min-height: 45rem; */
+  margin: auto 0 auto 2rem;
+  padding: 3rem;
+}
+#help .help-info h2 {
+  letter-spacing: 0.9rem;
+}
+#help .help-info h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-top: 2.2rem;
 }
