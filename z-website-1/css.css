@@ -352,6 +352,7 @@ input[type='search'] {
 #help .wrapper {
   min-height: 45vh;
   display: flex;
+  padding: 5rem;
 }
 #help .help-info {
   background-color: var(--yellow-1);
