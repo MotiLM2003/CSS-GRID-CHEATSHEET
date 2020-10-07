@@ -374,3 +374,47 @@ input[type='search'] {
   line-height: 1.1;
   margin-top: 2.2rem;
 }
+
+/* <!-- POPULAR SERVICES SECTION --> */
+#popular-services {
+  min-height: 48vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.05),
+      rgba(0, 0, 0, 0.05)
+    ),
+    url('./img//background-1.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-top: 6.5rem;
+}
+
+#popular-services h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+#popular-services p {
+  max-width: 58rem;
+  line-height: 2.2rem;
+}
+
+#popular-services .img-container {
+  margin: 0 auto;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+#popular-services .img-container .img-item {
+  width: 33rem;
+  height: 35rem;
+  background-color: #fff;
+  margin-right: 2rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#popular-services .img-container .img-item img {
+  width: 26.5rem;
+}
