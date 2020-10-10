@@ -21,6 +21,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Raleway, sans-serif;
+  min-width: 41.4rem;
 }
 .wrapper {
   max-width: 120rem;
@@ -105,7 +106,7 @@ body {
   width: 0%;
   transition: all 0.3s ease-out;
 }
-D .ui-menu li:hover::before {
+.ui-menu li:hover::before {
   background: var(--yellow-1);
   display: table;
   width: 40%;
@@ -165,8 +166,8 @@ input[type='search'] {
 .main-content {
   border-top: 1px solid var(--gray-light-1);
   padding-top: 3rem;
-  margin-bottom: 15rem;
-  min-height: 55vh;
+  margin-bottom: 10rem;
+  min-height: 40vh;
 }
 
 .home-repair-container {
@@ -537,6 +538,50 @@ input[type='search'] {
 .about__us__content img {
   width: 622px;
   height: 425px;
-  margin-left: -15em;
+  object-fit: block;
   box-shadow: -7rem 8rem rgba(241, 197, 17, 1);
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1330px) {
+  .about__us__content img {
+    width: 580px;
+    height: 345px;
+
+    box-shadow: -7rem 8rem rgba(241, 197, 17, 1);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about__us__content img {
+    width: 400px;
+    height: 345px;
+
+    box-shadow: -7rem 8rem rgba(241, 197, 17, 1);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .about__us__content img {
+    width: 300px;
+    height: 245px;
+
+    box-shadow: -4rem 4rem rgba(241, 197, 17, 1);
+  }
+}
+
+.about_us_content-2 {
+  width: 38vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 4rem;
+}
+
+.about_us_content-2 h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  font-family: Oswald, sans-serif;
 }
