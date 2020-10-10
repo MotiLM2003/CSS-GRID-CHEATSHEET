@@ -487,7 +487,7 @@ input[type='search'] {
 }
 
 #services .box-container-item {
-  width: 31rem;
+  width: 35rem;
   margin-bottom: 7rem;
 }
 
@@ -520,4 +520,23 @@ input[type='search'] {
 #services .btn-services:hover {
   background-color: var(--yellow-1) !important;
   color: #000;
+}
+
+#about__us {
+  height: 55vh;
+  background: linear-gradient(to right, #e5e5e5 50%, #fff 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__us__content {
+  display: flex;
+}
+
+.about__us__content img {
+  width: 622px;
+  height: 425px;
+  margin-left: -15em;
+  box-shadow: -7rem 8rem rgba(241, 197, 17, 1);
 }
